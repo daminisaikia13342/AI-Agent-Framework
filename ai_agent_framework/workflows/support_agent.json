@@ -1,0 +1,17 @@
+{
+  "flow_id": "customer_support_agent",
+  "tasks": [
+    {
+      "name": "normalize_query",
+      "type": "tool",
+      "retries": 1,
+      "timeout": 5
+    },
+    {
+      "name": "generate_response",
+      "type": "llm",
+      "retries": 2,
+      "timeout": 20
+    }
+  ]
+}

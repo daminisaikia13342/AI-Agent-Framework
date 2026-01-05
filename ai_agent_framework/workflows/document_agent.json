@@ -1,0 +1,17 @@
+{
+  "flow_id": "document_analysis_agent",
+  "tasks": [
+    {
+      "name": "ocr_extraction",
+      "type": "ocr",
+      "retries": 2,
+      "timeout": 10
+    },
+    {
+      "name": "document_summary",
+      "type": "llm",
+      "retries": 1,
+      "timeout": 20
+    }
+  ]
+}
